@@ -16,15 +16,7 @@ jQuery.extend(public_vars, {
 	lastBreakpoint: null
 });
 
-//屏蔽右键
-document.oncontextmenu = function () {
-    iziToast.show({
-        timeout: 2000,
-        icon: "fa-solid fa-circle-exclamation",
-        message: '右键被小小萌吃了'
-    });
-    return false;
-}
+
 
 /* Main Function that will be called each time when the screen breakpoint changes */
 function resizable(breakpoint)
